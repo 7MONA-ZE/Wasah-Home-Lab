@@ -2,7 +2,10 @@
 
 
 <h2>Description</h2>
-A SIEM and XDR solution in WAZUH and setup everything from scratch using Virtual Box, Kali Linux and Windows 10 pro etc. I  downloaded and install the the WAZUH tools such as a WAZUH manager, agent and I also demonstrate file and integrity monitoring by changing the configs on the WAZUH agent.
+Wazuh SIEM/XDR Deployment & FIM Demonstration
+Objective: Set up an end-to-end open-source Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) lab using Oracle VM VirtualBox, deploy the Wazuh infrastructure, and demonstrate File Integrity Monitoring (FIM).
+
+
 <br />
 
 
@@ -19,7 +22,21 @@ A SIEM and XDR solution in WAZUH and setup everything from scratch using Virtual
 
 
 <h2>walk-through:</h2>
+1. Lab Architecture & Environment Setup
+Hypervisor: Oracle VM VirtualBox
 
+Wazuh Manager / Server: Deployed on Linux (e.g., Kali Linux or Ubuntu/Debian VM) acting as the centralized engine for log processing, threat intelligence correlation, and alert generation.
+
+Monitored Endpoint: Windows 10 Pro running the lightweight Wazuh Agent to collect endpoint telemetry and transmit events to the manager.
+
+Networking: VirtualBox Internal Network or Host-Only Adapter to ensure secure communication between the Wazuh Manager and Windows endpoint.
+
+2. Installation & Agent Deployment
+Wazuh Manager Installation: Installed and initialized the Wazuh server components (Wazuh Indexer, Server, and Dashboard) on the Linux Virtual Machine.
+
+Wazuh Agent Deployment: Installed the Windows agent on the Windows 10 Pro VM and pointed it to the Wazuh Manager’s IP address.
+
+Agent Registration: Verified that the agent successfully established an encrypted channel with the manager and appeared as Active on the Wazuh dashboard.
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
