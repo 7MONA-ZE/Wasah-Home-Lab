@@ -37,8 +37,7 @@ Wazuh Manager Installation: Installed and initialized the Wazuh server component
 Wazuh Agent Deployment: Installed the Windows agent on the Windows 10 Pro VM and pointed it to the Wazuh Manager’s IP address.
 
 Agent Registration: Verified that the agent successfully established an encrypted channel with the manager and appeared as Active on the Wazuh dashboard.
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
 
 <!--
  ```diff
